@@ -11,7 +11,7 @@
         <RouterLink to="/count">count</RouterLink>
         <RouterLink to="/cityApi">cityApi</RouterLink>
         <RouterLink to="/shopping">shopping</RouterLink>
-        <img src="./assets/image/shoppingcar.svg" alt="">
+        <RouterLink to="/shoppingCar"><img src="./assets/image/shoppingcar.svg" alt=""></RouterLink>
       </nav>
     </div>
   </header>
