@@ -86,7 +86,7 @@ export default {
             </div>
             <div class="bg-white flex justify-between  font-bold p-8 ">
                 <div class="bg-orange-400 rounded-xl p-2">
-                    <RouterLink to="/shoppingCarCheck">回上頁繼續購買</RouterLink>
+                    <RouterLink to="/shoppingCar">回上頁繼續購買</RouterLink>
                 </div>
                 <div class="bg-slate-400 rounded-xl p-2">
                     <RouterLink to="/buysuccess">確認購買</RouterLink>
