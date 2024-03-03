@@ -82,19 +82,15 @@ export default {
                 商品數量:0
             </div>
             <div>
-                商品總金額:$0
+                商品總金額:$100
             </div>
         </div>
         <div class="bg-white flex justify-between  font-bold p-8 ">
             <div class="bg-orange-400 rounded-xl p-2">
-                <button type="button">
-                    回上頁繼續購買
-                </button>
+                <RouterLink to="/shopping">回上頁繼續購買</RouterLink>
             </div>
             <div class="bg-slate-400 rounded-xl p-2">
-                <button type="button">
-                    確認購買
-                </button>
+                <RouterLink to="/shoppingCarCheck">確認購買</RouterLink>
             </div>
         </div>
 
