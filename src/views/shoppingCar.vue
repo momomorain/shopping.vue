@@ -76,7 +76,6 @@ export default {
                 </div>
             </div>
         </div>
-
         <div class="bg-white  justify-end grid pr-10 font-bold p-4">
             <div>
                 商品數量:0

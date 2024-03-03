@@ -4,7 +4,7 @@
 </script>
 
 <template >
-  <header class="bg-black text-white ">
+  <header class="bg-black text-white font-bold">
     <div class="wrapper">
       <nav class="flex text-orange-400 p-3 justify-between" >
         <div class="flex gap-4">

@@ -93,12 +93,5 @@ export default {
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
     </main>
 </template>
