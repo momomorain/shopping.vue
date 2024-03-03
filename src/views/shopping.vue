@@ -72,7 +72,7 @@ export default {
                 <img src="../assets/image/iconl_1.png" alt="" @click=" itemSwitch = 'show1'">
                 <img src="../assets/image/iconr_1.png" alt="" @click=" itemSwitch = 'show2'">
             </div>
-            <div class=" w-auto h-auto p-8 ">
+            <div class=" w-auto h-auto pt-8 px-28">
                 <div class="bg-white grid grid-cols-6 border-y-2 p-2 rounded-2xl mb-2">
                     <div class="flex justify-center">商品圖片</div>
                     <div class="flex justify-center">商品名稱</div>
