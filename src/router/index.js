@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CountAdd from '../views/Count.vue'
 import cityApi from '../views/CityApi.vue'
-import shopping from '../views/shopping.vue'
-import shoppingCar from '../views/shoppingCar.vue'
+import shopping from '../views/Shopping.vue'
+import shoppingCar from '../views/ShoppingCar.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
