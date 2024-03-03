@@ -89,7 +89,7 @@ export default {
                     <RouterLink to="/shoppingCarCheck">回上頁繼續購買</RouterLink>
                 </div>
                 <div class="bg-slate-400 rounded-xl p-2">
-                    <RouterLink to="/shoppingCarCheck">確認購買</RouterLink>
+                    <RouterLink to="/buysuccess">確認購買</RouterLink>
                 </div>
             </div>
         </div>
@@ -101,4 +101,4 @@ export default {
 
 
     </main>
-</template>./ShoppingCar.vue
+</template>

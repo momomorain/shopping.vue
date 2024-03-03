@@ -236,4 +236,3 @@ export default {
 
     </main>
 </template>
-./Shopping.vue
