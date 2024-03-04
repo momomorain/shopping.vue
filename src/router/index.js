@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import CountAdd from '../views/Count.vue'
-import cityApi from '../views/CityApi.vue'
-import Shopping from '../views/Shopping.vue'
-import ShoppingCar from '../views/ShoppingCar.vue'
-import ShoppingCarCheck from '../views/ShoppingCarCheck.vue'
-import BuySuccess from '../views/BuySuccess.vue'
+import HomeView from '@/views/HomeView.vue'
+import CountAdd from '@/views/Count.vue'
+import cityApi from '@/views/CityApi.vue'
+import Shopping from '@/views/Shopping.vue'
+import ShoppingCar from '@/views/ShoppingCar.vue'
+import ShoppingCarCheck from '@/views/ShoppingCarCheck.vue'
+import BuySuccess from '@/views/BuySuccess.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
