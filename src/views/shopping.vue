@@ -18,8 +18,37 @@ export default {
             count: 0,
             shopList: [],
             itemSwitch: 'show1',
+            pic: 0,
+            productDB: [],
         }
     },
+    methods: {
+        addProductPic() {
+            this.pic++
+        },
+        removeProductPic() {
+            if (this.pic > 0) {
+                this.pic--
+            }
+        },
+        toCart(item) {
+            let Pid = 0;
+            if (this.productDB.length !== 0) {
+                Pid = this.productDB[this.productDB.length - 1].Pid;
+            }
+            const addCart = {
+                Pid: Pid+1,
+                name: item.name,
+                price: item.price,
+                checked: false,
+            }
+            this.productDB.push(addCart)
+            console.log(this.productDB);
+
+            localStorage.setItem('cart', JSON.stringify(this.productDB));
+        }
+
+    }
 }
 </script>
 
@@ -51,17 +80,17 @@ export default {
                                 數量:
                             </div>
                             <div class="flex mb-5 p-1">
-                                <button type="button"
+                                <button type="button" @click=" item.quantity > 1 ? item.quantity-- : 0"
                                     class="rounded-l-xl bg-white w-[20px] h-[20px] border-2 border-black text-center pb-6">-</button>
-                                <input type="number" class="w-[50px] border-2 border-black h-[28px] text-center "
-                                    value="1">{{ quantity }}
-                                <button type="button"
+                                <input type="number" :value="item.quantity"
+                                    class="w-[50px] border-2 border-black h-[28px] text-center ">
+                                <button type="button" @click=" item.quantity++"
                                     class="rounded-r-xl bg-white w-[20px] h-[20px] border-2 border-black pb-6">+</button>
                             </div>
                         </div>
                         <div class="bg-blue-950 flex justify-center rounded-b-lg p-2">
                             <img src="../assets/image/shoppingcar.svg" alt="">
-                            <div class="text-white"> 加入購物車 </div>
+                            <button class="text-white" @click="toCart(item)"> 加入購物車 </button>
                         </div>
                     </div>
                 </div>
@@ -81,7 +110,8 @@ export default {
                     <div></div>
                     <div></div>
                 </div>
-                <div v-for="(item, index) in shopList" :key="item.id" class="bg-white grid grid-cols-6 rounded-2xl mb-2">
+                <div v-for="(item, index) in shopList" :key="item.id"
+                    class="bg-white grid grid-cols-6 rounded-2xl mb-2">
                     <div class="flex justify-center items-center p-6">
                         <img src="../assets/image/300x300_1.png" alt="">
                     </div>
